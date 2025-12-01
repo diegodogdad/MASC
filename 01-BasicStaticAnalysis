@@ -1,0 +1,20 @@
+## Fuzzy Hashing ##
+
+calcs>dir
+calcs>md5deep
+
+# Compute the fuzzy hash of all files
+C:> ssdeep –b * 
+{-b : only display file name only; suppress path}
+
+# Matching against a given fuzzy hash
+C:> ssdeep –b calc_win7_32bit.exe > calc_32bit_fuzzyHash.txt  
+C:> ssdeep –b –m calc_32bit_fuzzyHash.txt  *
+
+# Matching against a set of other known files
+C:> ssdeep –b C:Windows\SysWOW64\*.exe > WOW64_exes_fHash.txt  
+C:> ssdeep –b –m WOW64_exes_fHash.txt <insert some directory> *
+*** Note the 3-byte (bit) change in the modified calc – DOS -> dos  ***
+
+# {Matching against all files even if there is a 0% match}
+use the –a switch
