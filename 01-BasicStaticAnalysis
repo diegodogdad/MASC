@@ -18,3 +18,14 @@ C:> ssdeep –b –m WOW64_exes_fHash.txt <insert some directory> *
 
 # {Matching against all files even if there is a 0% match}
 use the –a switch
+
+## Exercise 1.1 ##
+
+Create hash file of notepad.exe: ssdeep "notepad.exe" > notepad_fuzzyHash.txt
+Compare the hash: ssdeep -b -m notepad_fuzzyHash.txt *.exe
+
+## Lab 1 ##
+
+# Activity 1 - Basic Static Analysis
+
+
