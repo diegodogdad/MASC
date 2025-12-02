@@ -28,4 +28,6 @@ Compare the hash: ssdeep -b -m notepad_fuzzyHash.txt *.exe
 
 # Activity 1 - Basic Static Analysis
 
+# Activity 2 - Basic Dynamic Analysis
+
 
