@@ -28,6 +28,10 @@ Compare the hash: ssdeep -b -m notepad_fuzzyHash.txt *.exe
 
 # Activity 1 - Basic Static Analysis
 
-# Activity 2 - Basic Dynamic Analysis
+# Activity 2 - Basic Static Analysis with DIE
+
+
+## Lab 1 Part 2 ##
+BASIC DYNAMIC ANALYSIS
 
 
