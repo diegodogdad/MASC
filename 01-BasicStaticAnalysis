@@ -24,6 +24,16 @@ use the –a switch
 Create hash file of notepad.exe: ssdeep "notepad.exe" > notepad_fuzzyHash.txt
 Compare the hash: ssdeep -b -m notepad_fuzzyHash.txt *.exe
 
+
+## Exercise 1.2 ##
+
+On your REMnux VM, ensure that all IPs will get routed:
+accept-all-ips start	{this very helpful service will now ensure that all IPs get routed}
+
+
+
+
+
 ## Lab 1 ##
 
 # Activity 1 - Basic Static Analysis
